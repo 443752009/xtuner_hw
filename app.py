@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 
 # download internlm2 to the base_path directory using git tool
 base_path = './xtuner_hw'
-os.system(f'git clone https://openxlab.org.cn/models/detail/Eagle102/xtuner_hw.git {base_path}')
+os.system(f'git clone https://openxlab.org.cn/models/Eagle102/xtuner_hw.git {base_path}')
 os.system(f'cd {base_path} && git lfs pull')
 
 tokenizer = AutoTokenizer.from_pretrained(base_path,trust_remote_code=True)
